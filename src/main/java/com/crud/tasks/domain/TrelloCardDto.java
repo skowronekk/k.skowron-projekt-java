@@ -16,14 +16,14 @@ public class TrelloCardDto {
     @JsonProperty("name")
     private String name;
 
-    @JsonProperty("desc")
+    @JsonProperty("description")
     private String description;
 
     @JsonProperty("pos")
     private String pos;
 
-    @JsonProperty("idList")
-    private String IdList;
+    @JsonProperty("listId")
+    private String listId;
 
    @JsonProperty("badges")
     private TrelloBadgesDto trelloBadgesDto;
