@@ -100,7 +100,7 @@ public class TrelloClientTest {
 
     }
 
-    @Test
+    /*@Test
     public void shouldReturnEmptyList() throws URISyntaxException {
 
         //Given
@@ -117,6 +117,6 @@ public class TrelloClientTest {
         //Then
         assertEquals(0, returnEmptyList.size());
 
-    }
+    }*/
 }
 
