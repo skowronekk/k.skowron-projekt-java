@@ -9,12 +9,10 @@ import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.mail.javamail.MimeMessagePreparator;
 
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
-import static org.junit.Assert.*;
 
 @RunWith(MockitoJUnitRunner.class)
 public class SimpleEmailServiceTest {
@@ -29,13 +27,13 @@ public class SimpleEmailServiceTest {
     public void shouldSendEmail() {
 
         // Given
-        Mail mail = new Mail("test@test.com", "Test", "Test message", "test2@test.com");
+        Mail mail = new Mail("test@test.com", "Test", "Test message");
 
         SimpleMailMessage mailMessage = new SimpleMailMessage();
         mailMessage.setTo(mail.getMailTo());
         mailMessage.setSubject(mail.getSubject());
         mailMessage.setText(mail.getMessage());
-        mailMessage.setCc(mail.getToCc());
+        //mailMessage.setCc(mail.getToCc());
 
         // When
         simpleEmailService.send(mail);
@@ -45,7 +43,7 @@ public class SimpleEmailServiceTest {
 
     }
 
-    @Test
+    /*@Test
     public void mailWithoutCc() {
 
         //Given
@@ -62,5 +60,5 @@ public class SimpleEmailServiceTest {
 
         //Given
         verify(javaMailSender, times(1)).send(Mockito.any(SimpleMailMessage.class));
-    }
+    }*/
 }
