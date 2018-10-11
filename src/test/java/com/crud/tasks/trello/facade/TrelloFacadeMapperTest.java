@@ -41,9 +41,8 @@ public class TrelloFacadeMapperTest {
         Assert.assertEquals(2, numberOfBoards);
         Assert.assertEquals("Board2", nameOfTestedBoard);
     }
-    //bad
 
-    /*@Test
+    @Test
     public void testMapToBoardsDto() {
         //Given
         TrelloList list1 = new TrelloList("4422", "test3", true);
@@ -65,7 +64,7 @@ public class TrelloFacadeMapperTest {
         Assert.assertEquals(2, numberOfBoards);
         Assert.assertEquals("Board3", nameOfTestedBoard);
 
-    }*/
+    }
 
     @Test
     public void testMapToCard() {

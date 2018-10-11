@@ -64,7 +64,7 @@ public class TrelloClientTest {
 
     }
 
-    /*@Test
+    @Test
     public void shouldCreateCard() throws URISyntaxException {
 
         //Given
@@ -72,8 +72,7 @@ public class TrelloClientTest {
                 "Task, task",
                 "Test Description",
                 "top",
-                "test_id",
-                null
+                "test_id"
         );
 
         URI uri = new URI("http://test.com/cards?key=trelloConfig&token=trelloConfig&name=Task,%20task&desc=Test%20Description&pos=top&idList=test_id");
@@ -95,7 +94,7 @@ public class TrelloClientTest {
         assertEquals("http://test.com", newCard.getShortUrl());
 
 
-    }*/
+    }
 
     @Test
     public void shouldReturnEmptyList() throws URISyntaxException {
