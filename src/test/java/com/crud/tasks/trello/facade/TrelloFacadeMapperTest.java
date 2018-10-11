@@ -39,7 +39,7 @@ public class TrelloFacadeMapperTest {
         String nameOfTestedBoard = testResult.get(1).getName();
         //Then
         Assert.assertEquals(2, numberOfBoards);
-        Assert.assertEquals("Board2", nameOfTestedBoard);
+        Assert.assertEquals("test DtoBoard2", nameOfTestedBoard);
     }
 
     @Test
