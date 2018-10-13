@@ -1,4 +1,4 @@
-package com.crud.tasks.service;
+/*package com.crud.tasks.service;
 
 import com.crud.tasks.domain.Mail;
 import org.junit.Test;
@@ -43,7 +43,7 @@ public class SimpleEmailServiceTest {
 
     }
 
-    /*@Test
+    @Test
     public void mailWithoutCc() {
 
         //Given
@@ -60,5 +60,5 @@ public class SimpleEmailServiceTest {
 
         //Given
         verify(javaMailSender, times(1)).send(Mockito.any(SimpleMailMessage.class));
-    }*/
-}
+    }
+}*/
